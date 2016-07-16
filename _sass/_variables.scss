@@ -1,0 +1,37 @@
+// All variables
+
+// Typography
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size:   3.2rem;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+$text-color:       #111;
+
+// general spacing
+$spacing-unit:       100px;
+$spacing-unit-small: 10px;
+
+// colors
+$white:   #FFFFFF;
+$black:   #4A4A4A;
+$blue:    #56C5B3;
+$red:     #D37A5E;
+$orange:  #F7B349;
+$gray:    #D8D8D8;
+$visited: #9B9B9B;
+
+// Responsive Widths
+$content-width:    800px;
+
+$on-palm:          320px;
+$on-tab:           600px;
+$on-laptop:        920px;
+
+// troubleshooting
+$visual-grid: true !default; // Displays the visual grid when set to true
+
+
+// Quick Reference
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
