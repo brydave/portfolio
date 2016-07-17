@@ -70,6 +70,10 @@
     background: $black;
     color: $white;
   }
+
+  &.last {
+    @extend %vertical-rhythm-small;
+  }
 }
 
 .block-wrapper {
@@ -86,3 +90,17 @@
     max-width: 83px;
   }
 }
+
+/**
+ * Footer
+ */
+
+ footer {
+   .block { padding: 0; }
+   .footer__logo {
+     display: inline-block;
+     position: relative;
+     top: 4px;
+     width: 15px;
+   }
+ }
