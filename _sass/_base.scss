@@ -19,14 +19,25 @@ dl, dd, ol, ul, figure {
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
+%vertical-rhythm-large {
+    margin-bottom: $spacing-unit;
+}
+%vertical-rhythm-small {
+    margin-bottom: $spacing-unit / 5;
+}
 
 /**
  * Basic styling
  */
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $white;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  color: $text-color;
+  background-color: $white;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+.hid {
+  visibility: hidden !important;
 }

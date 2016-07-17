@@ -1,18 +1,88 @@
 /**
- * Site header
+ * Global Page Layouts
  */
-.site-header {
+
+// testing
+* {
+  // background: $block-highlighter;
 }
 
-.site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+.site-header,
+.page-content,
+.site-footer {
+  @include outer-container;
+}
 
-    &,
-    &:visited {
+.wrapper {
+  @include row();
+
+  @include media($mobile) {
+    @include span-columns(2);
+  }
+}
+
+/**
+ * Site header
+ */
+.site-nav {
+  @include span-columns(10 of 12);
+  @include shift(1);
+  padding-top: 20px;
+
+  .site-nav__logo {
+    @include span-columns(1);
+
+    .personal-logo {
+      display: block;
+      max-width: 38px;
     }
+  }
+
+  .site-nav__links {
+    @include span-columns(11);
+
+    ul {
+      float: right;
+    }
+  }
+}
+
+.block-wrapper {
+
+  .block__image {
+    @include row();
+    @extend %vertical-rhythm;
+    background: $gray;
+    height: 225px;
+  }
+}
+
+/**
+ * Page content
+ */
+.block {
+  @include row();
+  @extend %vertical-rhythm-large;
+  color: $black;
+  padding: 45px 0;
+
+  &.block--black-bg {
+    background: $black;
+    color: $white;
+  }
+}
+
+.block-wrapper {
+  @include span-columns(10);
+  @include shift(1);
+}
+
+.block__logo {
+  @include row();
+  @extend %vertical-rhythm-small;
+
+  .personal-logo {
+    @include span-columns(2);
+    max-width: 83px;
+  }
 }

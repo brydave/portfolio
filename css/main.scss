@@ -6,10 +6,17 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "bourbon",
+  "grid-settings",
   "neat",
   "variables",
   "mixins",
+  "typography",
   "base",
   "layout",
   "syntax-highlighting"
+;
+
+// Import components
+@import
+  "components/navigation"
 ;

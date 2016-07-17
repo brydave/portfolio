@@ -21,17 +21,7 @@ $orange:  #F7B349;
 $gray:    #D8D8D8;
 $visited: #9B9B9B;
 
-// Responsive Widths
-$content-width:    800px;
-
-$on-palm:          320px;
-$on-tab:           600px;
-$on-laptop:        920px;
-
-// troubleshooting
-$visual-grid: true !default; // Displays the visual grid when set to true
-
-
 // Quick Reference
 // $grey-color-light: lighten($grey-color, 40%);
 // $grey-color-dark:  darken($grey-color, 25%);
+$block-highlighter: rgba(211, 122, 94, 0.3);
