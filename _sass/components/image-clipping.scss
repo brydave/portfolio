@@ -1,0 +1,30 @@
+.img-clip {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: white;
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+  position: absolute;
+  shape-inside: polygon(0 0,  780px 0, 780px 250px, 0 250px);
+  shape-padding: 20px;
+  transition: all .3s ease;
+  -webkit-clip-path: polygon(0 0,  780px 0, 780px 250px, 0 250px);
+}
+.img-clip.reveal{
+  shape-inside: polygon(300px 100px,  780px 0, 780px 250px, 0 250px);
+  -webkit-clip-path:  polygon(300px 100px,  780px 0, 780px 250px, 0 250px);
+ /* shape-inside: circle(50%, 50%, 50%);
+  -webkit-clip-path: circle(50%, 50%, 50%); */
+}
+
+// add clip-path dimensions if necessary for copy
+.img-clip.feature-1 {
+  background-image: url("https://images.unsplash.com/photo-1467348733814-f93fc480bec6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2635f17894dffc22d8073624dad76875");
+}
+.img-clip.feature-2 {
+  background-image: url("https://images.unsplash.com/photo-1467348733814-f93fc480bec6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2635f17894dffc22d8073624dad76875");
+}
+.img-clip.feature-3 {
+  background-image: url("https://images.unsplash.com/photo-1467348733814-f93fc480bec6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2635f17894dffc22d8073624dad76875");
+}

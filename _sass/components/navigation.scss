@@ -4,3 +4,9 @@
     font-size: 1.4rem;
   }
 }
+
+a.personal-logo {
+  border: 0;
+  &:before { content: ""; }
+  &:after { content: ""; }
+}

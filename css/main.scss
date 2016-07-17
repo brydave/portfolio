@@ -11,6 +11,7 @@
   "variables",
   "mixins",
   "typography",
+  "forms",
   "base",
   "layout",
   "syntax-highlighting"
@@ -18,5 +19,6 @@
 
 // Import components
 @import
-  "components/navigation"
+  "components/navigation",
+  "components/image-clipping"
 ;

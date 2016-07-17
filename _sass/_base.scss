@@ -25,6 +25,9 @@ dl, dd, ol, ul, figure {
 %vertical-rhythm-small {
     margin-bottom: $spacing-unit / 5;
 }
+%vertical-rhythm-very-small {
+    margin-bottom: $spacing-unit / 10;
+}
 
 /**
  * Basic styling
