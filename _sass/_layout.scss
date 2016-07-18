@@ -87,6 +87,10 @@
   &.last {
     @extend %vertical-rhythm-small;
   }
+  &.no-margin {
+    margin-bottom: 0;
+    padding: 20px 0;
+  }
 }
 
 .block-wrapper {
