@@ -33,7 +33,7 @@ textarea {
 	width: 100%;
 	border: none;
 	border-bottom: 2px solid $white;
-	color: $gray;
+	color: $white;
   font-size: 2rem;
   line-height: 1.5;
   height: 27px;
@@ -53,17 +53,13 @@ textarea {
 }
 
 input.submit {
-  @extend a;
-  background: none;
-  border: none;
+	@extend a;
+  @extend .button;
+	float: right;
+	margin-top: 15px;
+
 
   &:hover {
     color: $orange;
-  }
-  &:before {
-    content: "[";
-  }
-  &:after {
-    content: "]";
   }
 }

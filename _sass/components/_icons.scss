@@ -1,0 +1,50 @@
+.block__social {
+  padding-top: 80px;
+
+  .icon-alone {
+    display: inline-block; /* Fix for clickability issue in WebKit */
+  }
+
+  ul li {
+    background: $white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+    height: 29px;
+    width: 29px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    border-radius: 50%;
+    display: block;
+    color: $black;
+    height: 29px;
+    width: 29px;
+
+    &:hover {
+      background: $blue;
+    }
+  }
+
+  a span {
+    display: block;
+    height: 29px;
+    font-size: 1.9rem;
+    position: relative;
+    top: 4px;
+    text-align: center;
+    width: 29px;
+    line-height: -1;
+  }
+}
+
+// usability
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}

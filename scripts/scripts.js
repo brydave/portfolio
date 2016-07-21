@@ -22,6 +22,23 @@ $(document).ready( function() {
 		}
   })
 
+  // scrolling animation for header
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > 500) {
+        $(".site-nav__logo").addClass("open-from-top");
+        $(".site-header").addClass("white-bg");
+      } else {
+        $(".site-nav__logo").removeClass("open-from-top");
+        $(".site-header").removeClass("white-bg");
+      }
+  });
+  // folding animation temp
+
+  // var a = $(".fold-down");
+  // a.click(function() {
+  //   $(this).toggleClass("closed");
+  // });
+
 });
 
 //**

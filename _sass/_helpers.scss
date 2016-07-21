@@ -1,0 +1,22 @@
+.hid {
+  visibility: hidden !important;
+}
+
+.right {
+  float: right;
+}
+
+.no-margin {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.blue { color: $blue; }
+.red { color: $red; }
+.orange { color: $orange; }
+.white { color: $white; }
+
+.white-bg {
+  background: $white;
+  transition: all .2s;
+}
