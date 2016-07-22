@@ -220,6 +220,18 @@
   }
 }
 
+.block__next-previous {
+  .button.previous {
+    text-align: center;
+    @include span-columns(4 of 8);
+  }
+
+  .button.next {
+    text-align: center;
+    @include span-columns(4 of 8);
+  }
+}
+
 .block__logo {
   @include row();
   @extend %vertical-rhythm-small;
@@ -230,6 +242,39 @@
 
     @include media($mobile) {
       @include span-columns(2);
+    }
+  }
+}
+
+.page {
+
+  .page-content { padding: 0; }
+  .block { padding: 0; }
+  .block--black-bg {
+    padding: 80px 0;
+  }
+  .block-wrapper {
+    @include row();
+  }
+
+  .img-container {
+    @extend %vertical-rhythm-small;
+    overflow: hidden;
+  }
+
+  .half.left {
+    @include span-columns(4 of 8);
+
+    @include media($tablet) {
+      @include span-columns(6);
+    }
+  }
+
+  .half.right {
+    @include span-columns(4 of 8);
+
+    @include media($tablet) {
+      @include span-columns(6);
     }
   }
 }

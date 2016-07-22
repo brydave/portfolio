@@ -25,11 +25,11 @@ $(document).ready( function() {
   // scrolling animation for header
   $(window).scroll(function() {
       if ($(this).scrollTop() > 500) {
-        $(".site-nav__logo").addClass("open-from-top");
-        $(".site-header").addClass("white-bg");
+        $(".site-nav__logo.fade").addClass("open-from-top");
+        $(".site-header.fade").addClass("white-bg");
       } else {
-        $(".site-nav__logo").removeClass("open-from-top");
-        $(".site-header").removeClass("white-bg");
+        $(".site-nav__logo.fade").removeClass("open-from-top");
+        $(".site-header.fade").removeClass("white-bg");
       }
   });
   // folding animation temp
