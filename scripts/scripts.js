@@ -2,7 +2,7 @@
 ---
 
 $(document).ready( function() {
-  console.log("Hi there! Welcome to the console.");
+  console.log("Hi there! Welcome to my console.");
 
   // image reveal - hover transition
   $(".block-wrapper").hover( function() {

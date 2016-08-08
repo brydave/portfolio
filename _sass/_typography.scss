@@ -78,6 +78,7 @@ a {
   text-decoration: none;
   font-weight: 700;
   transition: all .5s;
+  outline: none;
 
   // specific instances
   &.block__excerpt--link { font-size: 1.6rem; }
@@ -87,6 +88,9 @@ a {
     border-radius: 2px;
     background: $blue;
     color: $white;
+  }
+  &:focus {
+    box-shadow: 0 7px 0 -3px $blue;
   }
   &.text-link:before {
     content: "[";
@@ -111,3 +115,7 @@ a {
 ul li { list-style-type: none; }
 ul.bullets li { list-style-type: disc; }
 ul.social li span { text-indent: 20px; }
+
+
+// arrows
+.arrow { font-family: 'Zapf Dingbats'; }

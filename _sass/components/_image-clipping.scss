@@ -10,6 +10,7 @@
   shape-padding: 20px;
   transition: all .3s ease;
   -webkit-clip-path: polygon(0 0,  780px 0, 780px 250px, 0 250px);
+  z-index: 2;
 }
 .img-clip.reveal{
   shape-inside: polygon(300px 100px,  780px 0, 780px 250px, 0 250px);

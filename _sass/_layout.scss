@@ -26,7 +26,7 @@
 .site-header {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   padding: 0 70px 0 50px;
 
   @include media($mobile) {

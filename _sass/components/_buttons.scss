@@ -4,9 +4,17 @@
 	background: $dark-gray;
   font-size: 1.6rem;
   padding: 5px 12px;
+  position: relative;
+  box-shadow: 0 10px 10px -5px #413C42;
+  transition: all .2s;
 
   &:hover {
     background: $blue;
     color: $white;
+  }
+
+  &:active {
+    top: 2px;
+    box-shadow: 0 1px 10px -5px #413C42;
   }
 }
