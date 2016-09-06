@@ -280,6 +280,37 @@
 }
 
 /**
+ * About
+ */
+
+.about {
+  background: $blue;
+  bottom: -100px;
+  color: $black;
+  height: 0;
+  margin: 0 3% 0 3%;
+  opacity: 0;
+  padding: 45px 0;
+  position: absolute;
+  transition: all 1s;
+  visibility: hidden;
+  width: 94%;
+
+  &.open {
+    bottom: 0;
+    height: 93%;
+    opacity: 1;
+    overflow-y: scroll;
+    transition: all .5s;
+    visibility: visible;
+  }
+
+  .block-wrapper {
+	   perspective: 1200px;
+  }
+}
+
+/**
  * Footer
  */
 

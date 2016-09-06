@@ -32,6 +32,7 @@ $(document).ready( function() {
         $(".site-header.fade").removeClass("white-bg");
       }
   });
+
   // folding animation temp
 
   // var a = $(".fold-down");
@@ -39,33 +40,14 @@ $(document).ready( function() {
   //   $(this).toggleClass("closed");
   // });
 
+  // about section
+  $('a[about]').click( function () {
+    $('body').toggleClass('noflow');
+    $('.about').toggleClass('open');
+  });
+
+
 });
-
-//**
-// float labels
-
-// Float label styles for subject & comments on focus
-// $("input").focus(function() {
-// 		$(this).next(".form__label").addClass('active blue');
-// })
-// $("textarea.comments").focus(function() {
-// 		$("label.comments").addClass('active blue');
-// })
-//
-// // Float label styles for subject & comments on blur, if there is no value in the section.
-// $("input.subject").blur(function() {
-// 	$('label.subject').removeClass('blue');
-// 		if (!$(this).val()) {
-// 				$('label.subject').removeClass('active blue');
-// 		}
-// })
-// $("textarea.comments").blur(function() {
-// 	$('label.comments').removeClass('blue');
-// 		if (!$(this).val()) {
-// 				$('label.comments').removeClass('active blue');
-// 		}
-// })
-
 
 // **
 // svg animations
